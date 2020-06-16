@@ -1,0 +1,646 @@
+@font-face {
+    font-family: Montserrat-Bold; 
+    src: url(../fonts/Montserrat-Bold.ttf); 
+}
+
+@font-face {
+    font-family: Montserrat-Light; 
+    src: url(../fonts/Montserrat-Light.ttf); 
+}
+
+@font-face {
+    font-family: Montserrat-Medium; 
+    src: url(../fonts/Montserrat-Medium.ttf); 
+}
+
+@font-face {
+    font-family: Montserrat-SemiBold; 
+    src: url(../fonts/Montserrat-SemiBold.ttf); 
+}
+
+@font-face {
+    font-family: Montserrat-Thin; 
+    src: url(../fonts/Montserrat-Thin.ttf); 
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*шапка*/
+header {
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.head {
+    max-width: 1440px;
+    margin: auto;
+    color: white;
+    padding: 50px 20px;
+}
+
+.header__top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+
+hr {
+    background-color: rgba(255, 255, 255, 0.267);
+    height: 1px;
+    border: none;
+    margin: 20px 0;
+}
+
+.header-logo {max-width: 100px;}
+
+.header__left-block {display: flex;}
+
+.vk-phone {
+    display: flex;
+    padding: 20px;
+    font-size: 12px;
+}
+
+.vk a {
+    color: white;
+    padding: 0 20px;
+}
+
+.hours {
+    padding-left: 40px;
+    font-size: 12px;
+}
+
+.header__button {
+    font-family: Montserrat-SemiBold;
+    font-size: 12px;
+    height: 40px;
+    border: solid 3px #27BEED;
+    background-color: rgba(0, 0, 0, 0.048);
+    margin-left: 40px;
+    padding: 0 20px;
+    color: white;
+}
+
+.header__button:hover {
+    background-color: #27BEED;
+    color: rgb(0, 0, 0);
+}
+
+.header__right-block {
+    font-family: Montserrat-SemiBold;
+    display: flex;
+    align-items: center;
+}
+
+.menu-top, .menu-bottom {
+    display: flex;}
+
+.menu-top li {
+        list-style: none;
+        padding: 10px;
+}
+
+.menu-top a, .menu-bottom a{
+    font-family: Montserrat-Light;
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-bottom a {
+    border-right: solid 1px rgba(255, 255, 255, 0.322);
+    padding-right: 20px;
+}
+
+.menu-bottom .last {
+    border-right: none;
+}
+
+.menu-top a:hover, 
+.menu-bottom a:hover {color: #27BEED;}
+
+.menu-bottom li {
+    list-style: none;
+    padding: 40px 10px;
+    
+}
+
+.menu-bottom {padding-left: 140px;}
+
+.header__h1 {
+    font-family: Montserrat-Bold;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.header__h4 {
+    font-family: Montserrat-Light; 
+    text-align: center;
+    padding-bottom: 140px;
+}
+
+span {color: #27BEED;}
+/*шапка конец*/
+
+/*основной контент*/
+main {
+    max-width: 100%;
+    margin: 0;
+}
+
+.con > .destns {
+    max-width: 1440px;
+    margin: auto;
+    font-family: Montserrat-Bold;
+    position: relative;
+    top: -100px;
+}
+  
+.destns > .row > .col {
+    background-color: #27BEED;
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+.destns > .row > .col > a {
+    display: block;
+    position: relative;
+    overflow: hidden; 
+}
+  
+.destns > .row > .col > a > img {
+    display: block;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    opacity: 1; 
+}
+
+.destns > .row > .col > a > div {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 1px 1px 10px black, 0 0 1px #27BEED;
+    font-size: 24px;
+    font-weight: bold;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+.destns > .row > .col > a > .div {
+    color: white;
+    visibility: hidden;
+    top: 80%;
+    font-size: 12px;
+}
+
+.destns > .row > .col:hover > a > img {
+    opacity: 0.6;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); 
+}
+
+  .destns > .row > .col:hover > a > div {
+    color: white;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1; 
+}
+  
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.row-1 img {width: 100%;}
+  
+.col-1 { width: 50%;}
+
+.col-2 {width: 33.333333%;}
+
+.col a {border: 2px solid white;}
+
+.description {
+    max-width: 1440px;
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: Montserrat-Medium;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 25px;
+    
+}
+
+.advantages__points {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.advantages__point {
+    font-family: Montserrat-Light;
+    max-width: 30%;
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    
+    
+}
+
+.advantages__point:hover {
+    box-shadow: 1px 1px 10px black, 0 0 1px #27BEED;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.advantages {
+    padding-top: 100px;
+    max-width: 1440px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.description h2 {
+    font-family: Montserrat-Bold;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+    
+}
+
+.advantages__img {
+    max-width: 80px;
+    margin-right: 20px;
+    margin-bottom: 29px;
+    box-sizing: border-box;
+}
+
+.advatages__heading h3 {
+    font-family: Montserrat-Medium;
+    font-size: 18px;
+    box-sizing: border-box;
+    
+}
+
+.advatages__heading {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    
+}
+
+.advantages__text {
+    text-align: justify;
+    box-sizing: border-box;
+    
+}
+
+.steps-wrapper {
+    margin: 100px 0 0 0;
+    width: 100%;
+    background-color: rgba(39, 191, 237, 0.144);
+}
+
+.steps-wrapper h2 {
+    font-family: Montserrat-Bold;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.steps {
+    max-width: 1024px;
+    padding: 40px 20px;
+    margin: auto;
+}
+
+.h3 {
+    font-family: Montserrat-Bold;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.step-left, .step-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.step__circle p {
+    font-family: Montserrat-Bold;
+    flex: 20%;
+    background-color: #27BEED;
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    line-height: 7em;  /* подробнее про line-height */
+    text-align: center; 
+    margin: 0 20px;
+    color: white;
+}
+
+.step__text {
+    font-family: Montserrat-Light;
+    flex: 80%;
+    margin: 0;
+    padding-top: 20px;
+    margin: 0 20px;
+    text-align: justify;
+}
+
+footer {
+    font-family: Montserrat-SemiBold;
+    color: white;
+    background-color: #27BEED;
+}
+
+.footer__wrapper {
+    max-width: 1440px;
+    padding: 40px 20px;
+    margin: auto;
+    display: flex;
+}
+
+.footer__nav {
+    font-family: Montserrat-Light;
+    display: flex;
+    flex: 30%;
+    padding-right: 20px;
+}
+
+.footer__nav li {
+    list-style: none;
+    padding-top: 5px;
+}
+
+.footer__nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer__nav a:hover {
+    color: rgb(30, 141, 175);
+}
+
+.footer__right-block {
+    flex: 70%;
+    padding-left: 20px;
+}
+
+.form__contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy {
+    font-family: Montserrat-Light;
+    text-align: right;
+    padding: 20px;
+    font-size: 10px;
+}
+
+input {
+    outline: none;
+    border: none;
+    margin: 25px 0;
+    padding: 10px 30px;
+}
+
+.footer__form .submit {
+    background-color: #27BEED;
+    border: solid 1px white;
+    color: white;
+}
+
+.footer__form .submit:hover {
+    background-color: white;
+    color: gray;
+}
+
+@media only screen and (max-width: 1200px){
+
+    .con > .destns {
+        top: -40px;
+    }
+
+   
+    .menu-top a {
+        padding-right: 5px;
+        font-size: 10px;
+        
+    }
+
+    .menu-bottom a {
+        padding-right: 5px;
+        font-size: 10px;
+        
+    }
+
+
+    .menu-bottom li {
+        
+        padding: 40px 5px;
+    }
+
+    .advantages {
+        padding-top: 40px;
+        
+    }
+
+    .footer__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        width: 400px;
+        margin: 1px;
+        padding: 10px 30px;
+    }
+
+    .footer__nav {
+        display: block;
+        font-size: 12px;
+    }
+
+    .footer__nav-one {
+        margin-bottom: 20px;
+        padding-left: 0;
+    }
+
+    .footer__nav-two {
+        padding-left: 0;
+    }
+
+    .phone, .hours {
+        font-size: 10px;
+    }
+
+    .description {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: justify;
+    }
+
+    .description h2{
+        
+        text-align: center;
+        padding: 20px 0;
+    }
+    .advantages__points {
+        flex-direction: column;
+    }
+
+
+    .advantages__point {
+        max-width: 80%;
+        margin: auto;
+        padding-top: 20px;
+        
+    }
+
+    .step__circle p {
+        flex: 10%;
+        background-color: #27BEED;
+        width: 5em;
+        height: 5em;
+        border-radius: 50%;
+        line-height: 5em;  
+    }
+
+    .step__text {
+        flex: 90%;
+        padding-bottom: 30px;
+        margin: 0 10px;
+    }
+
+    .steps {
+        font-size: 14px;
+    }
+
+    .row-2 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .col-2 {
+        width: 80%;
+        margin: auto;
+    }
+
+    .row-2 img {width: 100%;}
+
+}
+
+@media only screen and (max-width: 960px){
+
+    .header__h1 {
+        font-size: 24px;
+    }
+    
+    .header__h4 {
+       font-size: 14px;
+    }
+
+    .row-1 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .col-1 {
+        width: 80%;
+        margin: auto;
+    }
+
+    .destns > .row > .col > a > div {
+       
+        font-size: 14px;
+        
+    }
+    
+
+    .menu-bottom, .menu-top {
+        display: none;
+        
+    }
+
+    .footer__nav .footer__right-block {
+        flex: 45%;
+    }
+
+    .footer__right-block {
+        flex: 55%;
+    }
+
+    .form__contacts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    
+    .vk-phone {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px 20px 20px 0;
+        font-size: 12px;
+    }
+
+    
+
+    .footer__hours {
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .header__hours {
+        padding-left: 20px;
+    }
+
+    input {
+        width: 100%;
+        margin: 1px;
+        padding: 5px 20px;
+    }
+
+
+}
+
+@media only screen and (max-width: 640px){
+
+   
+    .header__right-block {
+        display: block;
+    }
+
+    .header__button {
+        font-size: 12px;
+        height: 25px;
+        border: solid 1px #27BEED;
+        margin-left: 20px;
+        margin-top: 20px;
+        padding: 0 20px;
+        color: white;
+    }
+
+    .vk-phone {
+        font-size: 10px;
+    }
+
+    
+
+
+}
