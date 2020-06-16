@@ -337,6 +337,7 @@ main {
 .step-left, .step-right {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .step__circle p {
@@ -346,7 +347,7 @@ main {
     width: 7em;
     height: 7em;
     border-radius: 50%;
-    line-height: 7em;  /* подробнее про line-height */
+    line-height: 7em;  
     text-align: center; 
     margin: 0 20px;
     color: white;
@@ -408,7 +409,7 @@ footer {
 .copy {
     font-family: Montserrat-Light;
     text-align: right;
-    padding: 20px;
+    padding: 10px 20px;
     font-size: 10px;
 }
 
@@ -428,6 +429,13 @@ input {
 .footer__form .submit:hover {
     background-color: white;
     color: gray;
+}
+
+.law {
+    font-size: 10px;
+    text-align: center;
+    font-family: Montserrat-Light;
+    padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 1200px){
